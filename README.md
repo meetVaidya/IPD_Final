@@ -36,6 +36,7 @@ Each data set consists of approximately 80k entries with 15 variables of which 9
 7. Frost point [C]: The dew/frost point temperature at 2 meters above the surface of the earth.
 8. Wet bulb temperature [C]: The adiabatic saturation temperature which can be measured by a thermometer covered in a water-soaked cloth over which air is passed at 2 meters above the surface of the earth.
 9. Surface Pressure [kPa]: The average surface pressure at the surface of the earth.
+
 And additional variables such as:
 10. Timestamps: year, month, day, hour.
 11. Time of sunrise.
