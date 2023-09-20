@@ -38,6 +38,7 @@ Each data set consists of approximately 80k entries with 15 variables of which 9
 9. Surface Pressure [kPa]: The average surface pressure at the surface of the earth.
 
 And additional variables such as:
+
 10. Timestamps: year, month, day, hour.
 11. Time of sunrise.
 12. Time of sunset.
