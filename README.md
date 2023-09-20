@@ -4,8 +4,8 @@ Solar Irradiance Prediction Project</h1>
 <div align="center">
   <a href="https://www.linkedin.com/in/eliatorre/">Elia Torre</a>,
   <a> Cyrill Albrecht</a>,
-  <a> Martha Rösler</a>
-  <a> Mario Baumgartner</a>
+  <a> Martha Rösler</a>,
+  <a href="https://www.linkedin.com/in/mario-baumgartner-101ba2168/"> Mario Baumgartner</a>
   <p><a href="https://www.ics.uzh.ch/en/">Institute for Computational Science </a>, University of Zurich, Zurich, Switzerland</p>
 </div>
 
