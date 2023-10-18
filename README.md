@@ -42,3 +42,33 @@ And additional variables such as:
 10. Timestamps: year, month, day, hour.
 11. Time of sunrise.
 12. Time of sunset.
+
+<hr/>
+
+## Research Questions
+1. What relations exist in our data set?
+2. Can we develop an accurate machine learning model to predict solar radiation using our data?
+3. Is it possible to estimate solar radiation in Zurich by averaging over four neighboring locations?
+
+<hr/>
+
+## Data Cleaning & Augmentation
+1. Limit data set to items till 31. December 2021
+2. Add sunrise and sunset time
+3. Make a binary variable light
+4. Check for NaN values
+
+<hr/>
+
+## Prediction Pipeline
+1. Dataset splitting with 5-Kfold Cross-Validation
+2. Initial Models Evaluation
+3. Hyperparameter Tuning of Models
+4. Training of Tuned Models
+5. Ensemble of Best Performing Models
+6. Neural Networks Architectures Training & Hyperparameters Optimization
+7. Tuned Models Evaluation
+
+<hr/>
+
+## Models
