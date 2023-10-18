@@ -20,11 +20,11 @@ Many aspects of modern life are reliant on solar energy, from powering our homes
 
 ## Dataset
 We created five different data sets from [NASA Platform](https://power.larc.nasa.gov/data-access-viewer/). The NASA POWER project combines data from different NASA research projects with the goal of an easily accessible data to study the climate. The five data sets refer to five different cities:
-1. Zurich [Latitude: 47.35, Longitude: 8.55]
-2. Milan [Latitude: 45.47, Longitude: 9.18]
-3. Dijon [Latitude: 47.32, Longitude: 5.06]
-4. Innsbruck [Latitude: 47.27, Longitude: 11.43]
-5. Karlsruhe [Latitude: 48.99, Longitude: 8.43]
+- Zurich [Latitude: 47.35, Longitude: 8.55]
+- Milan [Latitude: 45.47, Longitude: 9.18]
+- Dijon [Latitude: 47.32, Longitude: 5.06]
+- Innsbruck [Latitude: 47.27, Longitude: 11.43]
+- Karlsruhe [Latitude: 48.99, Longitude: 8.43]
 
 Each data set consists of approximately 80k entries with 15 variables of which 9 hourly-measured features on a time-span of 10 years ranging from 01.01.2013 until 31.12.2022:
 1. The radiance [W/m2]: The total solar irradiance incident (direct plus diffuse) on a horizontal plane at the surface of the earth under all sky conditions.
@@ -46,17 +46,17 @@ And additional variables such as:
 <hr/>
 
 ## Research Questions
-1. What relations exist in our data set?
-2. Can we develop an accurate machine learning model to predict solar radiation using our data?
-3. Is it possible to estimate solar radiation in Zurich by averaging over four neighboring locations?
+- What relations exist in our data set?
+- Can we develop an accurate machine learning model to predict solar radiation using our data?
+- Is it possible to estimate solar radiation in Zurich by averaging over four neighboring locations?
 
 <hr/>
 
 ## Data Cleaning & Augmentation
-1. Limit data set to items till 31. December 2021
-2. Add sunrise and sunset time
-3. Make a binary variable light
-4. Check for NaN values
+- Limit data set to items till 31. December 2021
+- Add sunrise and sunset time
+- Make a binary variable light
+- Check for NaN values
 
 <hr/>
 
@@ -72,3 +72,41 @@ And additional variables such as:
 <hr/>
 
 ## Models
+- Linear Regression
+- K-Nearest Neighbor Regression (KNN)
+- Decision Tree Regression
+- Random Forest Regression (RF)
+- Extreme Gradient Boosting (XGB)
+- AdaBoost (ADB)
+- CatBoost
+- LightGBM (LGBM)
+- Voting Regressor (rf, xgb, adb)
+- Stacking Regressor (Ridge) (rf, xgb, adb)
+- Stacking Regressor (ElasticNet) (rf, xgb, adb)
+- Feed-Forward Neural Network (FFNN)
+- Long Short-Term Memory Neural Network (LSTM)
+
+<hr/>
+
+## Hyperparameter Tuning
+- Machine Learning Models:
+  - RandomizedSearchCV (5-Folds)
+  - 20 Iterations (approx. 3h per model)
+  - Negative Mean Squared Error
+- Deep Learning Models:
+  - Feed-Forward Neural Network (FFNN):
+    - Min-Max Scaling
+    - 6 FC Layers
+    - ELU Activation
+    - ADAM Optimizer
+    - 32 Batch Size
+    - 100 Epochs
+    - Approx. 40 mins on NVIDIA T4
+  - Long Short-Term Memory Neural Network (LSTM):
+    - 6 LSTM Layers
+    - 1 Dense Layer
+    - ReLU Activation
+    - ADAM Optimizer
+    - 32 Batch Size
+    - 40 Epochs
+    - Approx. 30 mins on NVIDIA T4
