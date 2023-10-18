@@ -110,3 +110,13 @@ And additional variables such as:
     - 32 Batch Size
     - 40 Epochs
     - Approx. 30 mins on NVIDIA T4
+   
+<hr/>
+
+## Results
+<div align="center">
+<img src="Img/laplacian.png" alt="Laplacian Embedding" width="40%">
+</div>
+
+## Contact
+Feel free to e-mail etorre@student.ethz.ch.
