@@ -115,7 +115,11 @@ And additional variables such as:
 
 ## Results
 <div align="center">
-<img src="Img/laplacian.png" alt="Laplacian Embedding" width="40%">
+<img src="img/results_hist.png" alt="Results Histogram" width="40%">
+</div>
+
+<div align="center">
+<img src="img/results_table.png" alt="Results Table" width="40%">
 </div>
 
 ## Contact
