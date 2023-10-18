@@ -9,12 +9,7 @@ Solar Irradiance Prediction Project</h1>
   <p><a href="https://www.ics.uzh.ch/en/">Institute for Computational Science </a>, University of Zurich, Zurich, Switzerland</p>
 </div>
 
->**<p align="justify"> Abstract:** *This repository presents the research undertaken in the Vodafone Data Science Challenge (2021). The purpose of the challenge was that of predicting the nature of the Vodafone customers interactions with Tobi Digital Assistant to enhance Vodafone Customer Service. The research was based on a dataset of supervised interactions parameters used to classify customers communications with Tobi. Leveraging Convolutional Neural Networks (CNN) along with some inspiration taken from sequence classification models and deep recommender systems, we designed a model to take two inputs, one representing the user history on past interactions and one composed by the sessions events in order to draw conclusions on the nature of the interactions.*
-
-<hr/>
-
-## Introduction 
-Many aspects of modern life are reliant on solar energy, from powering our homes and businesses to providing energy for transportation and industry. In this project, we want to accurately predict Solar Irradiance at a specific location starting from meteorological and time factors. A model of the Irradiance can help us better understand and manage this valuable resource, which in turn can lead to more efficient and sustainable energy use. This analysis has a wide range of applications, including improving solar power systems and optimizing solar energy production in different industries. For instance, precise predictions of Solar Irradiance can help solar energy firms in making informed decisions regarding the placement of new solar panels and ways to enhance their efficiency. Furthermore, this examination can also be used to anticipate fluctuations in Solar Irradiance resulting from climate change, which can assist policymakers in developing more effective measures to tackle its impact.
+>**<p align="justify"> Abstract:** *This repository presents the project developed in the Introduction to Data Science course of University of Zurich. The purpose of the project was that of predicting the _solar radiation_ in the location of Zurich by regression of the climate factors. In addition, prediction of the same variable was investigated as the "quadrangulation" of climate data from neighboring cities. The project was based on five different data sets extracted from the NASA platform associated with the NASA POWER project. Leveraging classical Machine Learning, Deep Learning and Ensemble methods we were able to obtain accurate estimates of the _solar radiation_ in the city of Zurich as the rest of this repository illustrates.*
 
 <hr/>
 
@@ -147,6 +142,8 @@ We aim to predict the ```IRRADIANCE``` in Zurich as an ensemble of 4 locations d
 <div align="center">
 <img src="img/custom.png" alt="Custom Data Set Results" width="40%">
 </div>
+
+<hr/>
 
 ## Contact
 Feel free to e-mail etorre@student.ethz.ch.
