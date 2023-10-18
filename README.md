@@ -135,7 +135,18 @@ We aim to predict the ```IRRADIANCE``` in Zurich as an ensemble of 4 locations d
   - **Averaging Measured Solar Radiation of the 4 Cities**: $\text{MSE}(\frac{\text{Dijon} + \text{Milan} + \text{Karlsruhe} + \text{Innsbruck}}{4}) = 1979.2$
   - **Weighted Averaging Measured Solar Radiation of the 4 Cities**: $\text{MSE}(\frac{\alpha * \text{Dijon} + \beta * \text{Milan} + \delta * \text{Karlsruhe} + \gamma * \text{Innsbruck}}{4}) = 1888.75$
 
-    Where the coefficients (i.e., $\alpha, \beta, \delta, \gamma)$ are defined as the normalized mean correlations over the data sets features between each city and Zürich. 
+    Where the coefficients (i.e., $\alpha, \beta, \delta, \gamma)$ are defined as the normalized mean correlations over the data sets features between each city and Zürich.
+
+  - **Custom Data Set**
+    - We create a custom data set by concatenating the features from the 4 cities.
+    - Features: ```[TEMPERATURE]```, ```[HUMIDITY]```, ```[PRECIPITATION]```, ```[PRESSURE]```, ```[WIND SPEED]```, ```[WIND DIRECTION]```, ```[DEW]```, ```[WET BULB TEMPERATURE]```, ```[LIGHT]```, ```[IRRADIANCE]```.
+    - Data set shape: 78888 entries x 45 features.
+    - 3-Fold Cross Validation with the same models used before (no retuning).
+    - Results:
+
+<div align="center">
+<img src="img/custom.png" alt="Custom Data Set Results" width="40%">
+</div>
 
 ## Contact
 Feel free to e-mail etorre@student.ethz.ch.
