@@ -122,5 +122,20 @@ And additional variables such as:
 <img src="img/results_table.png" alt="Results Table" width="40%">
 </div>
 
+<hr/>
+
+## "Quadrangulation" of Zürich Location
+We aim to predict the ```IRRADIANCE``` in Zurich as an ensemble of 4 locations data. 
+
+<div align="center">
+<img src="img/locations.png" alt="Quadrangulation" width="40%">
+</div>
+
+- 3 Different Techniques:
+  - **Averaging Measured Solar Radiation of the 4 Cities**: $\text{MSE}(\frac{\text{Dijon} + \text{Milan} + \text{Karlsruhe} + \text{Innsbruck}}{4}) = 1979.2$
+  - **Weighted Averaging Measured Solar Radiation of the 4 Cities**: $\text{MSE}(\frac{\alpha * \text{Dijon} + \beta * \text{Milan} + \delta * \text{Karlsruhe} + \gamma * \text{Innsbruck}}{4}) = 1888.75$
+
+    Where the coefficients (i.e., $\alpha, \beta, \delta, \gamma)$ are defined as the normalized mean correlations over the data sets features between each city and Zürich. 
+
 ## Contact
 Feel free to e-mail etorre@student.ethz.ch.
